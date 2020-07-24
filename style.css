@@ -1,0 +1,83 @@
+/* body {
+  
+  margin: 0;
+} */
+
+body {
+  background-image: url("images/background-img.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  min-width: 350px;
+}
+
+header, footer{
+  background-color: rgb(124, 124, 124);
+}
+
+h1, h2, h3, p, li, a {
+  font-family: Cairo;
+  color: rgb(121, 28, 41);
+/*   float: left; */
+}
+
+p, li, h3 {
+  color: rgb(121, 28, 41);
+}
+
+ol {
+  width: 250px;
+  text-align: center;
+}
+
+nav {
+  padding: 5px;
+/*   width: 50%; */
+/*   float: right; */
+  color: #fff;
+}
+
+a {
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
+.item {
+  flex: 1;
+}
+
+.wrapper {
+  width: 350px;
+  margin: auto;
+}
+
+.profileText {
+  background-color: rgb(231, 230, 230);
+}
+
+/* header:after,
+nav:after {
+  content: " ";
+  display: table;
+  clear: both;
+} */
+
+
+
+/* hr {
+  width: 420px;
+	height: 32px;
+	border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+	background-image: url("images/divider.png");
+} */
