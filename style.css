@@ -17,14 +17,15 @@ header, footer{
   background-color: rgb(124, 124, 124);
 }
 
-h1, h2, h3, p, li, a {
-  font-family: Cairo;
+h1, h2, h3, h4, p, li, a {
+  font-family: Cairo, serif;
   color: rgb(121, 28, 41);
 /*   float: left; */
 }
 
-p, li, h3 {
+p, li, h3, a {
   color: rgb(121, 28, 41);
+  font-family: Raleway, sans-serif;
 }
 
 ol {
@@ -34,15 +35,19 @@ ol {
 
 nav {
   padding: 5px;
-/*   width: 50%; */
 /*   float: right; */
   color: #fff;
 }
 
 a {
-  font-size: 18px;
-  justify-content: space-between;
+  font-size: 16px;
+  text-decoration: wavy;
 }
+
+a:link    { color: rgb(121, 28, 41);;  }
+a:visited { color: rgb(1, 1, 167);   }
+a:hover   { color: rgb(0, 114, 0); }
+a:active  { color: rgb(248, 182, 193);  }
 
 .group {
   display: flex;
@@ -53,10 +58,11 @@ a {
 
 .item {
   flex: 1;
+  align-content: center;
 }
 
 .wrapper {
-  width: 350px;
+  width: 400px;
   margin: auto;
 }
 
@@ -74,7 +80,7 @@ nav:after {
 
 
 /* hr {
-  width: 420px;
+  width: 350px;
 	height: 32px;
 	border: none;
   margin-top: 30px;
