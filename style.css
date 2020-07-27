@@ -1,74 +1,89 @@
-/* body {
-  
-  margin: 0;
-} */
+/* The following CSS was written from scratch and
+/* should meet the requirements outlined in the assignment.
+
+
+/* 
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Red Rose', cursive; 
+
+primary color: #C2779A
+complimentary: #77c29f
+
+analogous: #c277c0
+analogous: #c27a77
+
+triadic: #c29f77
+triadic: #9ac277
+
+*/
 
 body {
-  background-image: url("images/background-img.jpg");
-  background-color: #cccccc;
+  font-family: 'Arial', serif;
+  background-color: rgb(51, 51, 51);
+}
+
+header {
+  font-family: 'Red Rose', cursive;
+  color: #C2779A;
   height: 100vh;
+  background-image: url("images/background-img.jpg");
   background-position: center;
-  background-repeat: repeat-y;
   background-size: cover;
-  min-width: 350px;
 }
 
-header, footer{
-  background-color: rgb(124, 124, 124);
+h2, h3, h4 {
+  font-family: 'Red Rose', cursive;
+  color: #77c29f;
 }
 
-h1, h2, h3, h4, p, li, a {
-  font-family: Cairo, serif;
-  color: rgb(121, 28, 41);
-/*   float: left; */
+header h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #C2779A;
 }
 
-p, li, h3, a {
-  color: rgb(121, 28, 41);
-  font-family: Raleway, sans-serif;
+p, li{
+  color: #c277c0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-ol {
-  width: 250px;
-  text-align: center;
-}
-
-nav {
-  padding: 5px;
-/*   float: right; */
-  color: #fff;
+img {
+  width: 100%;
 }
 
 a {
   font-size: 16px;
-  text-decoration: wavy;
 }
 
-a:link    { color: rgb(121, 28, 41);;  }
-a:visited { color: rgb(1, 1, 167);   }
-a:hover   { color: rgb(0, 114, 0); }
-a:active  { color: rgb(248, 182, 193);  }
+a:link    { color: #C2779A; }
+a:visited { color: #c29f77; }
+a:hover   { color: #c27a77; }
+a:active  { color: #9ac277; }
 
 .group {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  text-align: center;
-  flex-wrap: wrap;
 }
 
 .item {
   flex: 1;
-  align-content: center;
+  align-self: center;
 }
 
-/* .wrapper {
-  width: 400px;
-  margin: auto;
-} */
+header div.group {
+  vertical-align: 10vh;
+}
 
-.profileText {
-  background-color: rgb(231, 230, 230);
+.wrapper {
+  width: 80%;
+  /* margin: auto; */
+}
+
+#home,#aboutMe,#projects,#contact {
+  background-color: rgb(104, 99, 99);
+  margin: 6px 20px 0 20px;
+  padding-bottom: 10vh;
 }
 
 /* header:after,

@@ -9,7 +9,8 @@
     rel="stylesheet"
     type="text/css"
   />
-  <link 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Red+Rose:wght@300;400&display=swap"
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Raleway&display=swap"
     rel="stylesheet"
     type="text/css"
@@ -17,23 +18,23 @@
   <title>eliasDev</title>
 </head>
 <body>
-  <header class="group">
-    <div class="item">
-        <h1>Elias Martinez</h1>
-        <h2>Software Developer</h2>
-        <nav>
-          <a href="#home">HOME</a>
-          <a href="#aboutMe">ABOUT ME</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
+  <header>
+    <div class="group">
+        <h1 class="item">Elias Martinez</h1>
+        <h2 class="item">Software Developer</h2>
+        <nav class="item">
+          <a href="#home">HOME  \</a>
+          <a href="#aboutMe">ABOUT ME  \</a>
+          <a href="#projects">PROJECTS  \</a>
+          <a href="#contact">CONTACT  </a>
         </nav>
     </div>
   </header>
-  <main class="group">
-    <div id="home" class="wrapper item">
-      <img src="images/first-picture.jpg" width="400" alt="city view from cockpit" />
-      <header><h2>Hello! I'm Elias Martinez</h2></header>
-      <div class="profileText">
+  <main>
+    <div id="home" class="group">
+      <img src="images/first-picture.jpg" alt="city view from cockpit" class="item"/>
+      <h2 class="item">Hello! I'm Elias Martinez</h2>
+      <div class="profileText item">
         <p>I'm a software developer living in <em>Phoenix, Arizona</em></p>
         <p>As a former aerospace engineer, I'm interested in:</p>
         <ul>
@@ -43,45 +44,43 @@
         </ul>
       </div>
     </div>
-    <article id="aboutMe" class="wrapper item">
+    <article id="aboutMe" class="group">
       <hr />
-      <header><h2>About Elias</h2></header>
-      <img src="images/placeholder-picture.jpg" alt="birds-eye engineer man" width="400px" />
-      <section class="profileText">
+      <img src="images/placeholder-picture.jpg" alt="birds-eye engineer man" class="item" />
+      <h2 class="item">About Elias</h2>
+      <section class="profileText item">
         <p>After graduating college I became an aerospace engineer and worked with beginners and professionals. While I love airplanes and space exploration I found that I really enjoyed writing logical expressions and seeing the results on screens.</p>
         <p>As a student at Bloc, I've begun my journey to becoming a software developer and couldn't be happier!</p>
         <p>If you're looking to hire a new developer (or are looking to pair up on a hackthon challenge) please reach out! I am so excited to work with other developers to build great software.</p>
       </section>
     </article>
-    <div class="wrapper item" id="projects">
+    <div id="projects" class="group">
       <hr />
-      <header>
-        <h2>Projects</h2>
-      </header>
-      <img src="images/marten-bjork-aTt_rNa3gmM-unsplash.jpg" alt="Type of Work I Do" width="400px" />
-      
+      <h2 class="item">Projects</h2>
+      <img src="images/marten-bjork-aTt_rNa3gmM-unsplash.jpg" alt="Type of Work I Do" class="item" />
       <div class="group">
-        <div class="profileText">
+        <div class="profileText item">
           <h3>High Altitude Hot Rod Charter Plane</h3>
           <p>Near-future transport category aircraft offering 15% "fuel-burn" reduction. This plane is most efficient when it flies very high, very fast - Mach 0.83 and 46K feet!</p>
         </div>
-        <img src="images/HAHR_SW.jpg" alt="ASU airplane" width="400px" />
-        <div class="profileText">
+        <img src="images/HAHR_SW.jpg" alt="ASU airplane" width="400" class="item" />
+        <div class="profileText item">
           <p>App Uses HTML/CSS and JS</p>
-          <p><a href="https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley"> Book Flights Here </a></p><p><a href="https://github.com/eliasBloc"> Source Code</a></p>
+          <ol><li><a href="https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley"> Book Flights Here </a></li><li><a href="https://github.com/eliasBloc"> Source Code</a></li>
         </div>
       </div>
     </div>
-    <div id="contact" class="wrapper item">
+    <div id="contact" class="group">
       <hr />
-      <header><h2>Contact Me</h2></header>
-      <div  class="profileText">
+      <h2 class="item">Contact Me</h2>
+      <div  class="profileText item">
         <ol>
-          <li><h3><a href="https://www.linkedin.com/in/jose-elias-martinez/">LinkedIn</a></h3></li>
-          <li><h3><a href="https://github.com/eliasBloc">GitHub</a></h3></li>
+          <li><a href="https://www.linkedin.com/in/jose-elias-martinez/">LinkedIn</a></li>
+          <li><a href="https://github.com/eliasBloc">GitHub</a></li>
         </ol>
-        <div id="googleMap" style="width:100%;height:400px"></div>
       </div>
+      <div id="googleMap" style="width:60%;height:300px"  class="item"></div>
+    </div>
   </main>
   <footer class="group">
     <h4>Copyright 2020</h4>
