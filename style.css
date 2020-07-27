@@ -43,7 +43,7 @@ header h2 {
   color: #C2779A;
 }
 
-p, li{
+li {
   color: #c277c0;
   font-family: 'Montserrat', sans-serif;
 }
@@ -64,20 +64,35 @@ a:active  { color: #9ac277; }
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .item {
   flex: 1;
   align-self: center;
+  flex-wrap: wrap;
 }
 
-header div.group {
-  vertical-align: 10vh;
+.groups {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.wrapper {
-  width: 80%;
-  /* margin: auto; */
+.items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.profileText {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #home,#aboutMe,#projects,#contact {
@@ -86,20 +101,28 @@ header div.group {
   padding-bottom: 10vh;
 }
 
-/* header:after,
-nav:after {
-  content: " ";
-  display: table;
-  clear: both;
-} */
+p, h4 {
+  color: #c277c0;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 6px;
+}
 
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
 
+  .group {
+    flex-direction: row;
+  }
 
-/* hr {
-  width: 350px;
-	height: 32px;
-	border: none;
-  margin-top: 30px;
-  margin-bottom: 20px;
-	background-image: url("images/divider.png");
-} */
+  /* .item {
+
+  } */
+}
+
