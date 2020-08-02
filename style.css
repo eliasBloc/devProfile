@@ -12,7 +12,6 @@ triadic: #9ac277
 */
 
 body {
-  font-family: 'Arial', serif;
   background-color: rgb(51, 51, 51);
 }
 
@@ -28,6 +27,7 @@ header {
 h2, h3, h4 {
   font-family: 'Red Rose', cursive;
   color: #77c29f;
+  /* text-align: center; */
 }
 
 header h2 {
@@ -43,6 +43,7 @@ li {
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 a {
@@ -56,18 +57,25 @@ a:active  { color: #9ac277; }
 
 .group {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-wrap: wrap;
-
+  background-color: rgb(104, 99, 99);
+  margin: 6px 20px 0 20px;
+  padding-bottom: 8vh;
 }
 
 .item {
   flex: 1;
-  align-self: center;
   flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
 }
 
+.item + .item {
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+/* 
 .groups {
   display: flex;
   justify-content: center;
@@ -79,33 +87,53 @@ a:active  { color: #9ac277; }
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.profileText {
+/* .profileText {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-#home,#aboutMe,#projects,#contact {
-  background-color: rgb(104, 99, 99);
-  margin: 6px 20px 0 20px;
-  padding-bottom: 10vh;
-}
+} */
 
 p, h4 {
   color: #c277c0;
   font-family: 'Montserrat', sans-serif;
   display: inline-flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-left: 6px;
+  flex-wrap: wrap; */
+  margin: 0 15px;
   font-size: 17px;
+}
+
+figcaption {
+  color: #9ac277;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  height: 30vh;
+  justify-content: flex-end;
 }
 
 @media all and (min-width: 800px) {
   .group {
-    flex-direction: row;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
   }
+
+  main h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .item {
+    flex: 0 39%;
+    /* justify-content: center;
+    text-align: center; */
+    width: 48%;
+  }
+  
 }
