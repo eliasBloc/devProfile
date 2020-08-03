@@ -123,6 +123,18 @@ body main section#contact figure {
   width: 78%;
 }
 
+@media all and (min-width: 600px) {
+  article div.group {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .item {
+    flex: 0 40%;
+    width: 48%;
+  }
+}
+
 @media all and (min-width: 767px) {
   .group {
     display: flex;
