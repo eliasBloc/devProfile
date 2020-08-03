@@ -123,6 +123,10 @@ body main section#contact figure {
   width: 78%;
 }
 
+article div.group {
+  padding-bottom: 0;
+}
+
 @media all and (min-width: 600px) {
   article div.group {
     display: flex;
