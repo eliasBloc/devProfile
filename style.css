@@ -51,10 +51,10 @@ li {
   list-style-type: square;
 }
 
-  img {
-    width: 100%;
-    border-radius: 8px;
-  }
+img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 a {
   text-decoration: none;
@@ -238,7 +238,7 @@ hr {
     font-size: 25px;
   }
 
-  p {
+  p, ul.analogous-theme {
     font-size: 15px;
   }
 
@@ -268,9 +268,14 @@ hr {
   figure {
     width: 85%;
   }
+
+  .wrapperTop {
+    width: 85%;
+    margin: auto;
+  }
 }
 
-@media all and (min-width: 1023px) and (min-height: 767px) and (orientation: landscape) {
+@media all and (min-height: 767px) and (orientation: landscape) {
   figcaption {
     font-size: 17px;
   }
@@ -288,7 +293,7 @@ hr {
   }
 
   p, ul.analogous-theme {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   a {
@@ -298,6 +303,10 @@ hr {
 
   figure {
     width: 79%;
+  }
+
+  section#aboutMe p, ul.analogous-theme {
+    font-size: 20px;
   }
 
   section.item figure {
@@ -325,7 +334,7 @@ hr {
   }
 }
 
-@media all and (min-width: 1023px) and (min-height: 1023px) and (orientation: landscape) {
+@media all and (min-height: 1023px) and (min-width: 1023px) and (orientation: landscape) {
   header.group {
     align-items: center;
     justify-content: center;
@@ -370,6 +379,10 @@ hr {
   section.item figure img {
     margin: 0 0 0 70px;
   }
+}
+
+@media all and (min-width: 1366px) {
+
 }
 
 /* --------------------------- Contact Form Design ----------------------------- */
