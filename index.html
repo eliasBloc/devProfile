@@ -9,25 +9,31 @@
     rel="stylesheet"
     type="text/css"
   />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Red+Rose:wght@300;400&display=swap"
-    rel="stylesheet"
-    type="text/css"
-  />
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Red+Rose&display=swap" 
+  rel="stylesheet"
+  type="text/css"
+  >
+  
   <title>Elias Martinez Dev</title>
 </head>
 <body>
   <header class="group">
-    <h1>Elias Martinez</h1>
-    <h2>Software Developer</h2>
-    <nav>
-      <a href="#home">HOME  \</a>
-      <a href="#aboutMe">ABOUT ME  \</a>
-      <a href="#projects">PROJECTS  \</a>
-      <a href="#contact">CONTACT  </a>
+    <div class="item">
+      <h1>Elias Martinez</h1>
+      <h2>Software Developer For Hire</h2>
+    </div>
+    <nav class="item">
+      <ul id="navigation">
+        <li><a href="#home" target="_blank">HOME</a>
+        <li><a href="#aboutMe" target="_blank">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        </li>
+      </ul>
     </nav>
   </header>
-  <main>
+  <main class="wrapperTop">
 
     <!--  Introduction  -->
     <section id="home" class="group">
@@ -39,13 +45,8 @@
       </figure>
 
       <div class="item">    
-        <p>I'm a software developer living in Phoenix, Arizona. As a former aerospace engineer, I'm interested in:</p>
-        <ul>
-          <li>Web art that proliferates economic activity</li>
-          <li>Quality code that soars in efficiency and elegance</li>
-          <li>Creating with like-minded developers</li>
-        </ul>
-        <p>Send me your thoughts or concerns about my website; <a href="#contact">contact me</a>.</p>
+        <p>I live in Phoenix, Arizona. I'm an excellent navigator and mathematician.</p><br />
+        <p>Thanks in part to Phoenix's sublime natural splendor and post-modern Southwest culture, it has remained my humble abode despite more than a few adventures abroad; <a href="#contact" target="_blank">let's connect</a>.</p>
       </div>
     </section>
     
@@ -60,9 +61,13 @@
       </figure>
 
       <div class="item">
-        <p>After graduating from college, I became an aerospace engineer and worked with beginners and professionals. I took up amateur astrology and caught a travel bug. I have visited such places as Johannesburg, Rome, New York City, and Taipei.</p><br /><p>While I love airplanes and exploration, I found that I enjoy creating digital content and doing so thru the medium of computer science.</p><br />
-        <p>As a student at Bloc, I've begun my journey to become a software developer and couldn't be happier!</p><br />
-        <p>If you're looking to hire a new developer or are looking to pair up on a hackathon challenge, please reach out! I am so excited to work with other developers to build great software.</p>
+        <p>I do amateur astrology and traveled to such places as Johannesburg, Rome, New York City, and Taipei.</p><br />
+        <p class="analogous-theme">While I love airplanes and exploration, I found that I enjoy creating digital content and doing so thru the medium of computer science.</p><br />
+        <p>I am so excited to use my fullstack skills - mainly, server side - to build great software with other developers which includes:</p><br />
+        <ul class="analogous-theme">
+          <li>Elite JavaScript, Node, Postgres coding backend skills</li>
+          <li>Creating frontend HTML CSS websites from scratch.</li>
+        </ul>
       </div>
     </section>
 
@@ -79,7 +84,8 @@
       </figure>
 
       <div class="item">
-        <p>This list isn’t exhaustive, and it only includes scholarly web development projects.</p> 
+        <p>This list isn’t exhaustive, and it only includes scholarly web development projects.</p><br /><br />
+        <blockquote>If everyone is moving forward together, then success takes care of itself.<br /><br /><b>Henry Ford</b></blockquote>
       </div>
 
       <div class="group">
@@ -92,12 +98,12 @@
           </figure>
           <div class="profileCaption">
             <p class="item">
-              Test your knowledge of chemistry with this app.
+              Anyone can test their knowledge of chemistry with this app. It was written with HTML CSS & JS.
             </p>
             <ol class="item">
-              <li><a href="https://eliasbloc.github.io/quiz-app/"> Chem Quiz </a>
+              <li><a href="https://eliasbloc.github.io/quiz-app/" target="_blank"> Chem Quiz </a>
               </li>
-              <li><a href="https://github.com/eliasBloc/quiz-app"> Source Code </a>
+              <li><a href="https://github.com/eliasBloc/quiz-app" target="_blank"> Source Code </a>
               </li>
             </ol>
           </div>
@@ -111,12 +117,12 @@
           </figure>
           <div class="profileCaption">
             <p class="item">
-              Never lose your favorite website again, save the URL in this app.
+              Never lose your favorite website again, save the URL in this app. It was written with HTML, CSS, & JS.
             </p>
             <ol class="item">
-              <li><a href="https://eliasbloc.github.io/bookmark-app/"> Bookmark </a>
+              <li><a href="https://eliasbloc.github.io/bookmark-app/" target="_blank"> Bookmark </a>
               </li>
-              <li><a href="https://github.com/eliasBloc/bookmark-app"> Source Code </a>
+              <li><a href="https://github.com/eliasBloc/bookmark-app" target="_blank"> Source Code </a>
               </li>
             </ol>
           </div>
@@ -130,39 +136,37 @@
           </figure>
           <div class="profileCaption">
             <p class="item">
-              Schedule appointments for your pets with this app.
+              Schedule appointments for your pets and inqure about the clinic's services with this app. It was written with HTML CSS, JS, React, & JSX.
             </p>
             <ol class="item">
-              <li><a href="https://eliasbloc.github.io/pet-appointment-app/"> Pet Appointments </a>
+              <li><a href="https://eliasbloc.github.io/pet-appointment-app/" target="_blank"> Pet Appointments </a>
               </li>
-              <li><a href="https://github.com/eliasBloc/pet-appointment-app"> Source Code </a>
+              <li><a href="https://github.com/eliasBloc/pet-appointment-app" target="_blank"> Source Code </a>
               </li>
             </ol>
           </div>
         </section>
 
         <section class="item">
-          <h3>Team Project App</h3>
+          <h3>Which Device App</h3>
           <figure>
             <img src="images/placeholder.png" alt="Device screens in a planar arrangement, each displaying a mix of typical internet content and smartphone settings options with a horizontal marquee that reads: “screenshot coming soon” in a superposition." />
             <figcaption>More to come (@thinkful)</figcaption>
           </figure>
           <div class="profileCaption">
             <p class="item">
-              Do something with this app:
+              Ever indecisive about which laptop or tablet to buy? Well with this app you can narrow down your choices based on your prefrences. It was written using full stack skills HTML, CSS, JS, React, JSX, Node, & Postgres.
             </p>
             <ol class="item">
-              <li><a href="https://eliasbloc.github.io/team-project-app/"> App </a>
+              <li><a href="https://eliasbloc.github.io/team-project-app/" target="_blank"> App </a>
               </li>
-              <li><a href="https://github.com/eliasBloc/team-project-app"> Source Code </a>
+              <li><a href="https://github.com/eliasBloc/team-project-app" target="_blank"> Source Code </a>
               </li>
             </ol>
           </div>
         </section>
       </div>
-
     </article>
-
     <hr />
 
     <!--  Contact  -->
@@ -173,11 +177,25 @@
         </div>
         <figcaption>Google Maps</figcaption>
       </figure>
-      <div class="item">
-        <p>Feel free to contact me via</p>
+      <form class="item" action="https://formspree.io/mjvayazk" method="post">
+        <fieldset>
+          <legend><b>Contact Form</b></legend>
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name" placeholder="Jim" required />
+          <label for="user-email">Email:</label>
+          <input id="user-email" type="text" name="email" placeholder="hello@here" required />
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="message" placeholder="How is it over there?" required></textarea>
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
+      <div>
+        <p class="triadic-theme">Feel free to contact me via</p>
         <ol>
-          <li><a href="https://www.linkedin.com/in/jose-elias-martinez/">LinkedIn</a></li>
-          <li><a href="https://github.com/eliasBloc">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jose-elias-martinez/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/eliasBloc" target="_blank">GitHub</a></li>
+          <li><a href="mailto:jemart218@gmail.com" target="_blank">ixtchel8@gmail.com</a></li>
         </ol>
       </div>
     </section>

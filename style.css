@@ -1,7 +1,8 @@
 /* The following CSS should meet the requirements outlined in the assignment.
-/* 
+/*
+font-family: 'Inconsolata', monospace;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Red Rose', cursive; 
+font-family: 'Red Rose', cursive;
 primary color: #C2779A
 complimentary: #77c29f
 analogous: #c277c0
@@ -22,15 +23,16 @@ header {
   background-image: url("images/background-img.jpg");
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 header h2 {
   margin-top: 0;
   margin-bottom: 50px;
-  color: #C2779A;
+  color: #77c29f;
 }
 
-/*--- Main Headings, Images, Paragraphs, Captions, and List Item Styling ---*/
+/*--- Main Headings, Images, Paragraphs, Captions, and List Item Stylings ---*/
 main h2 {
   text-align: center;
   width: 100%;
@@ -38,30 +40,33 @@ main h2 {
 
 h2, h3, h4 {
   font-family: 'Red Rose', cursive;
-  color: #77c29f;
+  color: /* #C2779A; */#77c29f;
 }
 
 li {
   color: #c277c0;
   font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Red Rose', cursive; */
+  list-style-type: square;
 }
 
-img {
-  width: 100%;
-  border-radius: 8px;
-}
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
 
 a {
+  text-decoration: none;
   font-size: 16px;
 }
 
-a:link    { color: #C2779A; }
-a:visited { color: #c29f77; }
-a:hover   { color: #c27a77; }
+a:link    { color: #c277c0; }
+a:visited { color: #c27a77; }
+a:hover   { color: #c29f77; }
 a:active  { color: #9ac277; }
 
-p, h4 {
-  color: #c277c0;
+p {
+  color: #C2779A;/* #77c29f */;
   font-family: 'Montserrat', sans-serif;
   margin: 0 15px;
   font-size: 17px;
@@ -69,41 +74,43 @@ p, h4 {
 
 h3 {
   text-align: center;
+  color: #c29f77;
+}
+
+h4 {
+  color: #77c29f;
+  margin-right: 22px;
 }
 
 figcaption {
-  color: #9ac277;
+  color: /* #c29f77; */#9ac277;/* #c27a77; */
   font-size: 10px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.analogous-theme {
+  color: #c277c0;
   font-family: 'Montserrat', sans-serif;
 }
 
+.triadic-theme {
+  color: /* #9ac277; */#c29f77;
+}
+
 /*--- Class and Figure Stylings ---*/
+
 .group {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(104, 99, 99);
+  background-color: rgb(26, 26, 26);
   margin: 6px 20px 0 20px;
   padding-bottom: 8vh;
 }
 
-section#projects.group {
+section#projects.group{
   margin-bottom: 0;
-}
-
-.group div.item {
-  width: 85%;
-}
-
-.profileCaption {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.profileCaption .item {
-  width: 75%;
 }
 
 header.group {
@@ -120,42 +127,192 @@ footer.group {
 }
 
 body main section#contact figure {
-  width: 78%;
+  width: 75%;
 }
 
-article div.group {
+article div.group, section#contact.group, section#contact div.group {
   padding-bottom: 0;
 }
 
-@media all and (min-width: 600px) {
-  article div.group {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .item {
-    flex: 0 40%;
-    width: 48%;
-  }
+.profileCaption {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
-@media all and (min-width: 767px) {
+.profileCaption .item {
+  width: 75%;
+}
+
+.group div.item {
+  width: 89%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---  Navigation & Horizontal Rules  ---*/
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+hr {
+  border-color: #000;
+}
+
+/* ---- Media Queries ---- */
+
+@media (orientation: landscape)/* all and (min-width: 567px)  */{
+  figcaption {
+    font-size: 15px;
+  }
+  
   .group {
-    display: flex;
     flex-flow: row wrap;
   }
 
   header.group {
-    display: flex;
-    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
   }
 
-  .group div.item {
-    width: 100%;
+  div.item {
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
   .item {
-    flex: 0 40%;
+    flex: 0 42%;
     width: 48%;
   }
+  
+  header.group .item {
+    flex: 1;
+  }
+
+  header h1, header h2 {
+    align-items: center;
+  }
+}
+
+
+
+@media all and (min-width: 767px) and (orientation: portrait) {
+  header.group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  .group {
+    flex-flow: row wrap;
+  }
+
+  div.item {
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    flex: 0 42%;
+    width: 48%;
+  }
+
+  figure {
+    width: 75%;
+  }
+}
+
+/* Contact Form Design */
+
+form {
+  margin: 10px 0 10px 0;
+}
+
+form label {
+  display: block;
+  color: #77c29f;/* #9ac277; *//* #c277c0; */
+  font-family: 'Inconsolata', monospace;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #c277c0;/* #9ac277; */
+}
+
+form textarea {
+  height: 160px;
+  color: #fff;
+}
+
+form button {
+  color: /* #c277c0; *//* #C2779A; */rgb(26, 26, 26);
+  background-color: /* #c277c0; *//* #c29f77; *//* #9ac277; */#77c29f;
+  font-family: 'Red Rose', cursive;
+  float: right;
+  margin-left: 12px;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #C2779A;
+}
+
+form input[type=text] {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form fieldset legend {
+  color: #C2779A;
+  font-family: 'Red Rose', cursive;
+  float: right;
+  font-size: 19px;
+}
+
+form fieldset {
+  border-color: #c29f77;
+}
+
+form fieldset ::placeholder {
+  color: rgb(49, 49, 49);
+  font-family: 'Inconsolata', monospace;
+}
+
+/* --- Blockquote Design --- */
+
+blockquote {
+  border-top: solid 2px #C27a77;
+  border-bottom: solid 2px #c27a77;
+  text-align: center;
+  width: 80%;
+  color: #c27a77;
+  font-family: 'Inconsolata', monospace; 
 }
