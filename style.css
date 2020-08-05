@@ -40,13 +40,12 @@ main h2 {
 
 h2, h3, h4 {
   font-family: 'Red Rose', cursive;
-  color: /* #C2779A; */#77c29f;
+  color: #77c29f;
 }
 
 li {
   color: #c277c0;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Red Rose', cursive; */
   list-style-type: square;
 }
 
