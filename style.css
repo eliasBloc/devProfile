@@ -1,5 +1,5 @@
 /* The following CSS should meet the requirements outlined in the assignment.
-/*
+
 font-family: 'Inconsolata', monospace;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Red Rose', cursive;
@@ -11,7 +11,8 @@ triadic: #c29f77
 triadic: #9ac277
 */
 
-/*--- Body and Header Styling ---*/
+/* --------------------------- Body and Header Styling ------------------------- */
+
 body {
   background-color: rgb(51, 51, 51);
 }
@@ -32,7 +33,8 @@ header h2 {
   color: #77c29f;
 }
 
-/*--- Main Headings, Images, Paragraphs, Captions, and List Item Stylings ---*/
+/* ---- Main Headings, Images, Paragraphs, Captions, and List Item Stylings ---- */
+
 main h2 {
   text-align: center;
   width: 100%;
@@ -65,7 +67,7 @@ a:hover   { color: #c29f77; }
 a:active  { color: #9ac277; }
 
 p {
-  color: #C2779A;/* #77c29f */;
+  color: #C2779A;
   font-family: 'Montserrat', sans-serif;
   margin: 0 15px;
   font-size: 17px;
@@ -96,7 +98,7 @@ figcaption {
   color: #c29f77;
 }
 
-/*--- Class and Figure Stylings ---*/
+/* -------------------------- Class and Figure Stylings ------------------------ */
 
 .group {
   display: flex;
@@ -149,7 +151,7 @@ article div.group, section#contact.group, section#contact div.group {
   align-items: center;
 }
 
-/*---  Navigation & Horizontal Rules  ---*/
+/* ----------------------  Navigation & Horizontal Rules  ---------------------- */
 
 header nav {
   display: flex;
@@ -178,9 +180,9 @@ hr {
   border-color: #000;
 }
 
-/* ---- Media Queries ---- */
+/* --------------------------------- Media Queries ----------------------------- */
 
-@media (orientation: landscape)/* all and (min-width: 567px)  */{
+@media (orientation: landscape){
   figcaption {
     font-size: 15px;
   }
@@ -212,18 +214,40 @@ hr {
   header h1, header h2 {
     align-items: center;
   }
+
+  section#aboutMe p, ul.analogous-theme, section#aboutMe figcaption {
+    font-size: 14px;
+  }
 }
-
-
 
 @media all and (min-width: 767px) and (orientation: portrait) {
   header.group {
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  header h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  section#aboutMe p, ul.analogous-theme, section#aboutMe figcaption {
+    font-size: 12px;
   }
 
   figcaption {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .group {
@@ -231,7 +255,7 @@ hr {
   }
 
   div.item {
-    margin-left: 10px;
+    margin-left: 0;
     align-items: center;
     justify-content: center;
   }
@@ -242,11 +266,113 @@ hr {
   }
 
   figure {
-    width: 75%;
+    width: 85%;
   }
 }
 
-/* Contact Form Design */
+@media all and (min-width: 1023px) and (min-height: 767px) and (orientation: landscape) {
+  figcaption {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  header h2 {
+    margin: 0;
+  }
+
+  p, ul.analogous-theme {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  figure {
+    width: 79%;
+  }
+
+  section.item figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  body header nav.item ul {
+    width: 75%;
+  }
+
+  header.group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header div.item {
+    margin-left: 0;
+  }
+
+  .wrapperTop {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1023px) and (min-height: 1023px) and (orientation: landscape) {
+  header.group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  figure {
+    width: 74%;
+  }
+
+  .wrapperTop {
+    width: 80%;
+    margin: auto;
+  }
+
+  section.item figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  section.item figure img {
+    margin: 0 0 0 70px;
+  }
+}
+
+/* --------------------------- Contact Form Design ----------------------------- */
 
 form {
   margin: 10px 0 10px 0;
@@ -254,7 +380,7 @@ form {
 
 form label {
   display: block;
-  color: #77c29f;/* #9ac277; *//* #c277c0; */
+  color: #77c29f;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -262,7 +388,7 @@ form input,
 form textarea {
   width: 100%;
   margin-bottom: 20px;
-  background-color: #c277c0;/* #9ac277; */
+  background-color: #c277c0;
 }
 
 form textarea {
@@ -271,8 +397,8 @@ form textarea {
 }
 
 form button {
-  color: /* #c277c0; *//* #C2779A; */rgb(26, 26, 26);
-  background-color: /* #c277c0; *//* #c29f77; *//* #9ac277; */#77c29f;
+  color: rgb(26, 26, 26);
+  background-color: #77c29f;
   font-family: 'Red Rose', cursive;
   float: right;
   margin-left: 12px;
@@ -305,7 +431,7 @@ form fieldset ::placeholder {
   font-family: 'Inconsolata', monospace;
 }
 
-/* --- Blockquote Design --- */
+/* ---------------------------- Blockquote Design ------------------------------ */
 
 blockquote {
   border-top: solid 2px #C27a77;
@@ -315,3 +441,5 @@ blockquote {
   color: #c27a77;
   font-family: 'Inconsolata', monospace; 
 }
+
+/* ------------------------------------- END ----------------------------------- */
